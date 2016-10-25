@@ -4,19 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Part Management</title>
+<title>Insert title here</title>
 </head>
 <body>
-
-
-
-	<table>
+<table>
     <tr>
-        <th>Part Number</th>
+        <th>Order Number</th>
         <th>|</th>
-        <th>Part Description</th>
+        <th>Order Date</th>
         <th>|</th>
-        <th>Cost</th>
+        <th>Total</th>
+        <th>|</th>
+        <th>Entered By</th>
         
     </tr>
     <c:forEach items="${partList}" var="part" varStatus="status">
@@ -28,17 +27,18 @@
         
     </c:forEach><br></br>
 </table>
-<form action="Add Part" method="post">
-	<br></br><label for="Part Number">Part Number:</label>
-	<input type="text" name="username" />
-	<label for="Part Description">Part Description:</label>
+<form action="Add Order" method="post">
+	<br></br><label for="Order Number">Order Number:</label>
+	<input type="ordernum" name="ordernum" />
+	<label for="Order Date">Order Date:</label>
 	<input type="partDescription" name="Part Description" />
-	<label for="cost">cost:</label>
-	<input type="cost" name="cost" /> <br></br>
+	<label for="Total">Total:</label>
+	<input type="total" name="total" />
+	<label for="Entered By">Entered By:</label>
+	<input type="entered" name="enteredBy" /> <br></br>
 	
 	
-	<input type="submit" value="Add New Part" />
+	<input type="submit" value="Add Order" />
 </form>
-             
 </body>
 </html>
