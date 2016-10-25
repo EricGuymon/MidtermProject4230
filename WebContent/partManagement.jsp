@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Part Management</title>
 </head>
 <body>
 
@@ -28,19 +28,17 @@
         
     </c:forEach>
 </table>
-<FORM NAME="form1" METHOD="POST">
-            <INPUT TYPE="HIDDEN" NAME="buttonName">
-            <INPUT TYPE="BUTTON" VALUE="Add New Part" ONCLICK="button1()">
-         
-        </FORM>
-
-        <SCRIPT LANGUAGE="JavaScript">
-            <!--
-            function button1()
-            {
-                document.form1.buttonName.value = "button 1"
-                form1.submit()
-            }    
+<form action="Add Part" method="post">
+	<label for="Part Number">Part Number:</label>
+	<input type="text" name="username" />
+	<label for="Part Description">Part Description:</label>
+	<input type="partDescription" name="Part Description" />
+	<label for="firstName">First Name:</label>
+	<input type="text" name="firstName" /> <br></br>
+	
+	
+	<input type="submit" value="Register" />
+</form>
              
 </body>
 </html>
